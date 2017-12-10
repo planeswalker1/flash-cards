@@ -85,6 +85,11 @@ function createDiv(term, definition) {
   $('div.container').append(div);
 }
 
+// A for loop that calls the createDiv function to create and append .flashcard divs to the DOM
+for (let i = 0; i < terms.length; i++) {
+  createDiv(terms[i], definitions[i]);
+}
+
 // An event listener to show and hide the definition of div.flashcard on click
 $('.flashcard').click(function() {
   $(this).children('p').fadeToggle().toggleClass('hidden');
