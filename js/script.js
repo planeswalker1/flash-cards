@@ -74,6 +74,17 @@ let definitions = [
 
 // User-interface (or front-end) logic:
 
+// A function to create and append a .flashcard div to the DOM
+function createDiv(term, definition) {
+  let div = $('<div class=\'flashcard\'></div>');
+  let pTerm = $('<p></p>');
+  $(pTerm).text(term);
+  let pDefinition = $('<p class=\'hidden\'></p>');
+  $(pDefinition).text(definition);
+  $(div).append(pTerm, pDefinition);
+  $('div.container').append(div);
+}
+
 // An event listener to show and hide the definition of div.flashcard on click
 $('.flashcard').click(function() {
   $(this).children('p').fadeToggle().toggleClass('hidden');
