@@ -1,12 +1,12 @@
 # _flash-cards_
 
-#### _A website to practice html, css, and javaScript terms, 10.03.2017_
+#### _A website to practice JavaScript terms, 12.09.2017_
 
 #### By _**planeswalker1**_
 
 ## Description
 
-_This page has been created to practice adding, and removing classes with jQuery._
+_This page has been created to practice adding, and removing classes with jQuery. Also practice looping arrays and appending HTML elements to the DOM._
 
 ## Setup/Installation Requirements
 
